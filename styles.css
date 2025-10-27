@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  padding: 0 5rem;
+  margin-bottom: 2rem;
+  height: 80px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  text-align: center; 
+  z-index: 1;
+}
+.hum {
+  display: none;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav ul li a {
+  font-size: 1.3em;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+@media (max-width: 900px) {
+  .header {
+    padding: 0 3rem;
+    position: relative;
+  }
+  .hum {
+    display: block;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background-color: #333;
+    transition: 0.3s ease;
+  }
+  .hum i {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    font-size: 25px;
+    width: max-content;
+    height: max-content;
+    color: #fff;
+    opacity: 0;
+    transition: 1s ease;
+  }
+  .hum i.active {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+  .nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 1s ease;
+  }
+  .nav.active {
+    transition: 1s ease;
+    opacity: 1;
+  }
+  .nav ul {
+    display: block;
+    background-color: #333;
+    text-align: left;
+    width: 100vw;
+    padding: 0 3rem;
+  }
+  .nav ul li {
+    border-bottom: 1px solid #fff;
+    margin: 20px 0;
+    padding-bottom: 2rem;
+  }
+  .nav ul li:last-child {
+    border-bottom: none;
+  }
+  .nav ul li a {
+    margin: 0;
+  }
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.personal {
+  width: 40vw;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: black;
+  opacity: 0.9;
+  padding: 5rem 0;
+  color: white;
+}
+.person {
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  font-size: 18px;
+}
+.skillbar {
+  margin: 1em 0;
+}
+.per div {
+  display: inline-block;
+  margin: 1rem 1rem;
+  position: relative;
+}
+.plus {
+  position: sticky;
+}
+.personal img {
+  display: block;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 5px solid wheat;
+}
+input {
+  border: 2px solid orange;
+  border-radius: 2rem;
+  margin-left: 10px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.inform,
+.personal section {
+  margin: 1em 0;
+  font-size: 24px;
+}
+.skill,
+.lang,
+.hobbies {
+  margin: 1em 0;
+  padding: 0;
+}
+.skill ul,
+.lang ul,
+.hobbies ul,
+.exp-inf ul {
+  list-style: circle;
+  margin: 0em -0.8em;
+  font-size: 18px;
+}
+.inform p,
+.inform h1 {
+  text-align: center;
+  margin: 0.5em 0;
+}
+.personal section {
+  font-family: serif;
+  margin: 2em 1em;
+}
+.personal section span {
+  font-size: 18px;
+  margin: 2em;
+}
+.information {
+  width: 60vw;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5rem 2em;
+}
+.experience,
+.exp,
+.edu-sta {
+  margin: 1.5em 0;
+}
+.edu-sta h5 {
+  margin: 1em 0;
+}
+.exp-inf ul {
+  font-size: 16px;
+  text-align: justify;
+}
+.lef {
+  float: left;
+}
+.rig {
+  float: right;
+}
+.exp-inf {
+  margin: 3em 0;
+}
+.exp-inf li {
+  margin: 1em 0;
+}

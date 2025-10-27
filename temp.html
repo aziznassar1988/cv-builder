@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="object.js"></script>
+  </head>
+  <body>
+    <header><h2>Cv For You</h2></header>
+    <hr />
+    <p>
+      in this page used to help you to make your CV in 5 minutes, only fill all
+      field in correct information and after you finised press the button under
+      form:
+    </p>
+    <form>
+      <div class="person">
+      <div class="per">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" />
+          </div>
+          <div>
+            <label for="sname">Second Name</label>
+            <input type="text" id="sname" name="sname" />
+          </div>
+          <div>
+            <label for="tname">Third Name</label>
+            <input type="text" id="tname" name="tname" />
+          </div>
+          <div>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" />
+          </div>
+          <div>
+            <label for="jobs">Jobs</label>
+            <input
+              type="text"
+              id="jobs"
+              name="job"
+              placeholder="Enter Your Spacific Work"
+            />
+          </div>
+        </fieldset>
+      </div>
+      <div class="contact">
+        <div class="per">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div>
+              <label for="tel">Telephone</label>
+              <input type="text" id="tel" name="telephone" />
+            </div>
+            <div>
+              <label for="mail">Email</label>
+              <input type="email" id="mail" name="mail" />
+            </div>
+            <div>
+              <label for="country">Your Country</label>
+              <input
+                type="text"
+                id="country"
+                name="country"
+                placeholder="Enter Your Country"
+              />
+            </div>
+            <div>
+              <label for="city">Your City</label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Enter Your City"
+              />
+            </div>
+            <div>
+              <label for="town">Your Town</label>
+              <input
+                type="text"
+                id="town"
+                name="town"
+                placeholder="Enter Your town"
+              />
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="per">
+          <fieldset>
+            <legend>Skills Information</legend>
+            <label>Skills</label><br />
+            <div class="skillbar">
+              <input
+                type="text"
+                name="skills"
+                style="width: 80vw"
+                class="inputskill"
+                placeholder="Enter your Skill"
+              />
+            </div>
+            <button class="splus btn btn-success">+</button>
+          </fieldset>
+        </div>
+      </div>
+      <div class="lang">
+        <div class="per">
+          <fieldset>
+            <legend>Languages Information</legend>
+            <label>Language</label><br />
+            <div class="langbar">
+              <input
+                type="text"
+                class="inputlang"
+                name="lang"
+                style="width: 80vw"
+                placeholder="Enter your language"
+              />
+            </div>
+            <button class="langplus btn btn-success">+</button>
+          </fieldset>
+        </div>
+      </div>
+      <div class="hobbey">
+        <div class="per">
+          <fieldset>
+            <legend>Hobbies Information</legend>
+            <div class="hobbeyBar">
+              <label>Hobbies</label><br />
+              <input
+                type="text"
+                class="inputhobb"
+                name="hobby"
+                style="width: 80vw"
+                placeholder="Enter Other Hoobies"
+              />
+            </div>
+            <button id="plushobb" class="btn btn-success hobplus">+</button>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <button type="submit" id="sub" class="btn btn-success">Submit</button>
+    </form>
+  </body>
+</html>
